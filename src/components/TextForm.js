@@ -32,11 +32,11 @@ export default function TextForm(props) {
                 <h1 className='container' style={{color: props.mode==='dark'?'white':'black'}}>{props.heading}</h1>
                 <div className="mb-3">
                     {/* <label for="myBox" class="form-label">Example textarea</label> */}
-                    <textarea className="form-control" id="myBox" rows="7" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode==='dark'?'grey':'#eeeeee' , color: props.mode==='dark'?'white':'black'}}></textarea>
+                    <textarea className="form-control" id="myBox" rows="7" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode==='dark'?'#13466e':'#eeeeee' , color: props.mode==='dark'?'white':'black'}}></textarea>
                 </div>
-                <button className="btn btn-primary mx-2" onClick={handleUpperClick}>{props.convertToUppercase}</button>
-                <button className="btn btn-primary mx-2" onClick={handleLowerClick}>{props.convertToLowercase}</button>
-                <button className="btn btn-primary mx-2" onClick={handleReplaceClick}>{props.replace}</button>
+                <button className="btn btn-primary mx-2 my-1" onClick={handleUpperClick}>{props.convertToUppercase}</button>
+                <button className="btn btn-primary mx-2 my-1" onClick={handleLowerClick}>{props.convertToLowercase}</button>
+                <button className="btn btn-primary mx-2 my-1" onClick={handleReplaceClick}>{props.replace}</button>
             </div>
 
             <div className="container my-4 " style={{color: props.mode==='dark'?'white':'black'}}>
